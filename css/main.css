@@ -5,9 +5,6 @@
 /*****************************************************************************/
 
 
-/* Apply a natural box layout model to all elements,
-so that width takes padding into account.  Otherwise you have to subtract
-out the padding. */
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -33,6 +30,10 @@ body {
 	padding-right: 50px;
 }
 
+h2 {
+	color:#5B9BD5; 
+}
+
 /*****************************************************************************/
 /*
 /* Navbar
@@ -40,7 +41,7 @@ body {
 /*****************************************************************************/
 
 .navbar {
-	height: 157px;
+	height: 90px;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	margin-right: 100px;
@@ -61,9 +62,18 @@ body {
 	color: black;
 }
 
-.navbar a:link, a:visited {
+.navbar a{
 	color: black;
 	text-decoration: none;
+}
+
+
+a:hover{ 
+text-decoration:underline; 
+}
+
+.navbar a.current{ 
+text-decoration:underline; 
 }
 
 .logo{
@@ -119,6 +129,7 @@ body {
    background-color: white;
    margin: 20px 20px;
    float: left;
+   text-align: center;
 }
 
 img {
@@ -139,10 +150,8 @@ img:hover {
 
 .footer {
 	color: white;
-	height: 100px; /* change the height as needed*/
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 15px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 /*****************************************************************************/
@@ -181,3 +190,9 @@ img:hover {
     #footer { width: 480px; }
 }
 }
+
+/*****************************************************************************/
+/*
+/* Resume
+/*
+/*****************************************************************************/
