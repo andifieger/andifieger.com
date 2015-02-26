@@ -154,6 +154,11 @@ img:hover {
     margin-right: auto;
 }
 
+.share{
+	width: 160px;
+	margin-left: auto;
+    margin-right: auto;
+}
 /*****************************************************************************/
 /*
 /* Breakpoints
@@ -167,7 +172,7 @@ img:hover {
     .navbar{ margin-right: 200px;}
 
 
-    #footer { width: 768px; }
+    .footer { width: 200px; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -177,22 +182,22 @@ img:hover {
     .navbar{ margin-right: 250px;}
 
 
-    #footer { width: 480px; }
+    .footer { width: 200px; }
 }
 
 
 @media only screen and (max-width: 479px) {
     .container { width: 480px; }
     .content{ width: 480px;}
-    .navbar{ margin-right: 250px;}
+    .navbar{ margin-right: 150px;}
 
 
-    #footer { width: 480px; }
+    .footer { width: 200px; }
 }
 }
 
 /*****************************************************************************/
 /*
-/* Resume
+/* hamburger
 /*
 /*****************************************************************************/
