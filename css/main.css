@@ -78,6 +78,12 @@ text-decoration:underline;
 
 .logo{
 	float: left;
+	opacity: 1.0;
+
+}
+
+.logo {
+	float: left;
 
 }
 
@@ -132,12 +138,12 @@ text-decoration:underline;
    text-align: center;
 }
 
-img {
+.box img {
     opacity: 1.0;
     filter: alpha(opacity=40);
 }
 
-img:hover {
+.box img:hover {
     opacity: 0.5;
     filter: alpha(opacity=100);
 }
@@ -201,3 +207,26 @@ img:hover {
 /* hamburger
 /*
 /*****************************************************************************/
+
+
+#nav-toggle span { position: absolute; left: 50%; top: 50%; }
+
+#nav-toggle span, 
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px; 
+}
