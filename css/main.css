@@ -30,8 +30,25 @@ body {
 	padding-right: 50px;
 }
 
+
+
 h2 {
 	color:#5B9BD5; 
+}
+
+.column {
+	width: 460px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	padding-right: 75px;
+	text-align: justify;
+	text-indent: 15px;
+}
+
+.column img {
+max-width: 100%;
+max-height: 100%;
 }
 
 /*****************************************************************************/
@@ -62,7 +79,7 @@ h2 {
 	color: black;
 }
 
-.navbar a{
+.navbar,.box a{
 	color: black;
 	text-decoration: none;
 }
@@ -96,6 +113,13 @@ text-decoration:underline;
 .content {
 	background-color: white;
 	height: 1080px; /* change the height as needed*/
+	padding: 15px;
+	border-radius: 10px;
+	}
+
+.aboutcontent {
+	background-color: white;
+	height: 800px; /* change the height as needed*/
 	padding: 15px;
 	border-radius: 10px;
 	}
