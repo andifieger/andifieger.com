@@ -1,4 +1,4 @@
-function($){
+	jQuery(function($){
     	$( '.menu-btn' ).click(function(){
     		$('.responsive-menu').addClass('expand')
     		$('.menu-btn').addClass('btn-none')
@@ -8,4 +8,4 @@ function($){
     		$('.responsive-menu').removeClass('expand')
     		$('.menu-btn').removeClass('btn-none')
     	})
-  	}
+  	})
