@@ -1,6 +1,6 @@
 	jQuery(function($){
     	$( '.menu-btn' ).on("click", function(e){
             e.preventDefault();
-            $(".responsive-menu").toggle("slow");
+            $(".responsive-menu").toggle('fast');
     	})
   	})
