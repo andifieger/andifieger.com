@@ -21,6 +21,10 @@ body {
     font: 15px arial;
 }
 
+h2 {
+	color:#5B9BD5; 
+}
+
 /* All purpose container */
 .container {
 	width: 1320px;
@@ -30,14 +34,8 @@ body {
 	padding-right: 20px;
 }
 
-
-
-h2 {
-	color:#5B9BD5; 
-}
-
-.about{
-	width: 1070px;
+.aboutcontent{
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -80,7 +78,6 @@ h2 {
 	color: black;
 }
 
-
 a{
 	color: black;
 	text-decoration: none;
@@ -110,19 +107,11 @@ text-decoration:underline;
 
 .content {
 	background-color: white;
-	height: 1000px; /* change the height as needed*/
+	/*height: 1000px;  change the height as needed*/
 	padding: 15px;
 	border-radius: 10px;
 	}
 
-.aboutcontent {
-	background-color: white;
-	height: 800px; /* change the height as needed*/
-	padding: 15px;
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	}
 
 .content-header {
 	background-color: #7F9EAD;
@@ -265,12 +254,19 @@ h2 {
 	margin: 4px 0;
 	background: black;
 	z-index: 99;
+	padding-right: 20px;
 }
  
 .responsive-menu{
+	padding-top: 8px;
 	display: none;
 	float: right;
+	text-align: right;
 
+}
+
+.responsive-menu li{
+	list-style: none;
 }
  
 .expand {
@@ -285,6 +281,7 @@ h2 {
 
 @media only screen and (min-width: 960px) {
 	.menu-btn {display: none;}
+	.responsive-menu li {display: none;}
 }
 
 
@@ -295,6 +292,8 @@ h2 {
     .navbar{ margin-right: 200px;}
     .footer { width: 200px; }
     .nav-items {display: none;}
+
+    
 
 	
 }
