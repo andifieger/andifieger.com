@@ -25,16 +25,13 @@ h2 {
 	color:#5B9BD5; 
 }
 
-.page-container {
-	max-width: 1320px;
-	width: 95%;
-	margin: 0 auto;
-}
-
 /* All purpose container */
 .container {
+	width: 1320px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 
@@ -73,10 +70,6 @@ h2 {
 	max-height: 100%;
 }
 
-.clear {
-	clear: both;
-}
-
 /*****************************************************************************/
 /*
 /* Navbar
@@ -84,8 +77,10 @@ h2 {
 /*****************************************************************************/
 
 .navbar {
+	height: 90px;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	margin-right: 100px;
 }
 
 .nav-items {
@@ -117,6 +112,8 @@ text-decoration:underline;
 .logo{
 	float: left;
 	opacity: 1.0;
+	margin-left: 40px;
+
 }
 
 
@@ -129,8 +126,8 @@ text-decoration:underline;
 .content {
 	background-color: white;
 	/*height: 1000px;  change the height as needed*/
+	padding: 15px;
 	border-radius: 10px;
-	text-align: center;
 	}
 
 
@@ -166,11 +163,14 @@ text-decoration:underline;
 .box{
    width:350px;
    background-color: white;
-   margin: 0 30px 20px 30px;
+   margin-right: 60px;
+   margin-left: 5px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   float: left;
    text-align: center;
    max-width:100%;
-   min-height:365px;
-   display: inline-block;
+   max-height:100%;
 }
 
 .box img {
@@ -183,11 +183,6 @@ text-decoration:underline;
 .box img:hover {
     opacity: 0.5;
     filter: alpha(opacity=100);
-}
-
-.box a {
-	min-height: 365px;
-	display: block;
 }
 
 .share img {
@@ -226,10 +221,6 @@ h2 {
 .tablebig{
 	width: 668px;
 	vertical-align: top;
-}
-
-.resume{
-	text-align: left;
 }
 
 /*****************************************************************************/
@@ -311,7 +302,7 @@ h2 {
 /*
 /*****************************************************************************/
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 960px) {
 	.menu-btn {display: none;}
 	.responsive-menu li {display: none;}
 }
@@ -319,6 +310,8 @@ h2 {
 
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
     
+    .container { width: 768px; }
+    .content{ width: 860px;}
     .navbar{ margin-right: 200px;}
     .footer { width: 200px; }
     .nav-items {display: none;}
@@ -333,6 +326,8 @@ h2 {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     
+    .container { width: 480px; }
+    .content{ width: 480px;}
     .navbar{ margin-right: 250px;}
     .nav-items {display: none;}
     .footer { width: 200px; }
@@ -340,7 +335,8 @@ h2 {
 
 /*phone*/
 @media only screen and (max-width: 479px) {
-
+    .container { width: 480px; }
+    .content{ width: 480px;}
     .navbar{ margin-right: 150px;}
     .nav-items {display: none;}
     .footer { width: 200px; }
@@ -348,5 +344,7 @@ h2 {
 }
 
 @media (min-width: 768px) {
-
+    .container {
+      max-width: 730px;
+    }
   }
